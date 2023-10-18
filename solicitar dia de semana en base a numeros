@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int dia;
+
+    // Solicitar al usuario un número de día (1-7)
+    printf("Introduce un número de día (1-7): ");
+    scanf("%d", &dia);
+
+    // Determinar el día de la semana
+    if (dia == 1) {
+        printf("Es lunes.\n");
+    } else if (dia == 2) {
+        printf("Es martes.\n");
+    } else if (dia == 3) {
+        printf("Es miércoles.\n");
+    } else if (dia == 4) {
+        printf("Es jueves.\n");
+    } else if (dia == 5) {
+        printf("Es viernes.\n");
+    } else if (dia == 6) {
+        printf("Es sábado.\n");
+    } else if (dia == 7) {
+        printf("Es domingo.\n");
+    } else {
+        printf("Número de día no válido.\n");
+    }
+
+    return 0;
+}
+
+Se define una variable dia para almacenar el número de día ingresado por el usuario.
+Se utiliza printf y scanf para solicitar y leer el número de día.
+Luego, se utiliza una serie de estructuras if-else para determinar el día de la semana basado en el número ingresado.
